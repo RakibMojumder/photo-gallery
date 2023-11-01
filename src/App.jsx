@@ -50,7 +50,7 @@ function App() {
   };
 
   return (
-    <div className="p-14 bg-gray-100">
+    <div className="p-4 sm:p-10 md:p-14 bg-gray-100">
       <div className="bg-white rounded-md">
         <Header
           images={images}
@@ -58,14 +58,14 @@ function App() {
           selectedImages={selectedImages}
           setSelectedImages={setSelectedImages}
         />
-        <div className="p-8">
+        <div className="p-4 md:p-8">
           <DndContext
             sensors={sensors}
             collisionDetection={closestCenter}
             onDragEnd={handleDragEnd}
           >
             <SortableContext items={images} strategy={rectSortingStrategy}>
-              <div className="grid grid-cols-5 gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-8">
                 {images.map((image, index) => (
                   <div
                     key={index}

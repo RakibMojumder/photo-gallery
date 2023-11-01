@@ -1,11 +1,5 @@
 const Header = ({ selectedImages, setSelectedImages, images, setImages }) => {
-  const handleDeleteImages = () => {
-    const filteredImage = images.filter(
-      (image) => !selectedImages.find((photo) => photo.id === image.id)
-    );
-    setImages(filteredImage);
-    setSelectedImages([]);
-  };
+  const handleDeleteImages = () => {};
 
   return (
     <div className="px-5 py-2.5 border-b">
