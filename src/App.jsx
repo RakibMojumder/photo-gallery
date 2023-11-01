@@ -89,7 +89,7 @@ function App() {
                 ))}
 
                 {/* ADD IMAGE COMPONENT START */}
-                <div className="h-40 md:h-44 border flex flex-col justify-center items-center gap-y-3 font-semibold rounded-md p-3 cursor-pointer">
+                <div className="border flex flex-col justify-center items-center gap-y-3 font-semibold rounded-md p-3 cursor-pointer">
                   <BsImageAlt size={20} />
                   <h1>Add Images</h1>
                 </div>

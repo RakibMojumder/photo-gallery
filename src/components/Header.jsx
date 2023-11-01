@@ -1,5 +1,13 @@
 const Header = ({ selectedImages, setSelectedImages, images, setImages }) => {
-  const handleDeleteImages = () => {};
+  const handleDeleteImages = () => {
+    // get filtered images that does not include in the selectedImages
+    const filteredImages = images.filter(
+      (image) => !selectedImages.find((item) => item.id === image.id)
+    );
+
+    setImages(filteredImages);
+    setSelectedImages([]);
+  };
 
   return (
     <div className="px-5 py-2.5 border-b">

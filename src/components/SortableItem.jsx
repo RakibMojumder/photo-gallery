@@ -25,7 +25,7 @@ function SortableItem({ image, handleCheckBox, selectedImages }) {
       <div
         className={`h-full w-full absolute top-0 left-0 rounded-md ${
           selectedImages?.includes(image)
-            ? "bg-white/50"
+            ? "bg-white/60"
             : "bg-black/50 hidden group-hover:block"
         }`}
       >
