@@ -11,7 +11,7 @@ const Header = ({ selectedImages, setSelectedImages, images, setImages }) => {
               type="checkbox"
               name="image checkbox"
               checked={selectedImages.length > 0}
-              className="h-5 w-5 cursor-pointer"
+              className="h-4 md:h-5 w-4 md:w-5 cursor-pointer"
             />
             <h3>{selectedImages.length} File Selected</h3>
           </div>
